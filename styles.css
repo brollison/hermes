@@ -1,32 +1,57 @@
+/* THEME */
+:root {
+    /* COLORS */
+    --background-base: #ffffff;
+    --text-base: #000000;
+    --button-primary-background: #32a852;
+    --button-primary-hover: #a83298;
+
+    /* PADDING/MARGIN/RADIUS */
+    --size-xl: 1.5rem;
+    --size-lg: 1.25rem;
+    --size-base: 1rem;
+    --size-sm: 0.75rem;
+    --size-xs: 0.5rem;
+    --size-none: 0rem;
+
+    /* LINE THICKNESS */
+    --line-thick: 2px;
+    --line-med: 1.5px;
+    --line-base: 1px;
+    --line-thin: 0.5px;
+}
+
 /* MASTER STYLES */
 body {
-    margin: 0px;
+    margin: var(--size-none);
     /* font-family: "Balsamiq Sans", sans-serif; */
 }
 
 .btn-icon {
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: var(--size-xs) var(--size-base) var(--size-xs) var(--size-base);
     border: none;
-    background-color: pink;
+    background-color: var(--button-primary-background);
+    transition-duration: 0.5s;
+    border-radius: var(--size-xs);
 }
 
 /* NAVBAR STYLES*/
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
-    border-bottom: 1px solid gainsboro;
+    padding: var(--size-xl);
+    border-bottom: var(--line-base) solid gainsboro;
     align-items: center;
 }
 
 .navbar > .navbar-left > div {
-    margin-right: 1rem;
+    margin-right: var(--size-base);
     font-size: 1rem;
     text-transform: uppercase;
 }
 
 .navbar > .navbar-right > div {
-    margin-left: 1rem;
+    margin-left: var(--size-base);
     font-size: 1rem;
     text-transform: uppercase;
 }
@@ -35,24 +60,31 @@ body {
     display: flex;
 }
 
-/* .navbar-link {
-    margin: 0 0.5rem 0 0.5rem;
-} */
 .navbar-left > .navbar-links > .navbar-link > .navbar-link-text {
-    margin-left: 1rem;
+    margin-left: var(--size-base);
 }
 
 .navbar-right > .navbar-links > .navbar-link > .navbar-link-icon {
     height: 1.5rem;
-    margin-left: 0.5rem;
+    margin-left: var(--size-xs);
+}
+
+.navbar-icon {
+    width: 1.25rem;
 }
 
 .navbar > .navbar-left > .navbar-links > .navbar-branding {
-    margin-right: 1.25rem;
+    margin-right: var(--size-lg);
 }
 
 .navbar > .navbar-left > .navbar-links > .navbar-menu > .btn-icon {
     background-color: transparent;
+    padding: var(--size-xs) var(--size-xs) var(--size-xs) var(--size-xs);
+    border-radius: 2rem;
+}
+
+.navbar > .navbar-left > .navbar-links > .navbar-menu > .btn-icon:hover {
+    background-color: var(--button-primary-hover);
 }
 
 @media screen and (max-width: 650px) {
@@ -63,7 +95,7 @@ body {
         display: none;
     }
     .navbar {
-        padding: 0.5rem;
+        padding: var(--size-xs);
     }
 }
 
