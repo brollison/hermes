@@ -1,0 +1,61 @@
+/* BUTTONS */
+:root {
+    /* PADDING */
+    --btn-padding-xl: 1.5rem;
+    --btn-padding-lg: 1.25rem;
+    --btn-padding-base: 1rem;
+    --btn-padding-sm: 0.75rem;
+    --btn-padding-xs: 0.5rem;
+    --btn-padding-none: 0rem;
+    /* COLOR */
+    --btn-primary-background: #47FFAF;
+    --buttton-primary-text: #000000;
+    --btn-default-background: #f1f2f6;
+    --btn-default-text: #000000;
+    --btn-alt-background: transparent;
+    --btn-alt-text: #000000;
+    /* RADIUS */
+    --btn-circle: 100rem;
+    --btn-rounded: 0.5rem;
+    --btn-square: 0rem;
+    /* TEXT */
+    --btn-text-lg: 1.25rem;
+    --btn-text-base: 1rem;
+    --btn-text-sm: 0.75rem;
+    --btn-text-std: 500;
+    --btn-text-bold: 600;
+}
+.btn {
+    background-color: var(--btn-default-background);
+    border: none;
+    border-radius: var(--btn-rounded);
+    padding: var(--btn-padding-xs) var(--btn-padding-lg) var(--btn-padding-xs) var(--btn-padding-lg);
+    font-weight: var(--btn-text-std);
+    font-size: var(--btn-text-base);
+    min-width: 3rem;
+}
+.btn:hover {
+    filter: brightness(95%);
+}
+.btn-sm {
+    font-size: var(--btn-text-sm);
+}
+.btn-lg {
+    font-size: var(--btn-text-lg);
+}
+.btn-primary {
+    background-color: var(--btn-primary-background);
+    color: var(--buttton-primary-text);
+}
+.btn-primary:hover {
+    filter: brightness(85%);
+}
+.btn-alt {
+    background-color: var(--btn-alt-background);
+    border: 2px solid var(--btn-alt-text);
+    color: var(--btn-alt-text);
+}
+.btn-alt:hover {
+    background-color: var(--btn-default-background);
+    filter: brightness(95%);
+}
