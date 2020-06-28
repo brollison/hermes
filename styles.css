@@ -1,5 +1,6 @@
 @import "theme.css";
 @import "components.css";
+@import "components/header.css";
 @import url("https://use.typekit.net/xkq6fsr.css");
 
 /* MASTER STYLES */
@@ -10,6 +11,22 @@ html {
 }
 body {
     margin: var(--size-none);
-    font-family: "mr-eaves-modern", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-size: var(--text-base);
 }
+
+
+/* ----------------- */
+/* GLOBAL ROW STYLES */
+/* ----------------- */
+/* .row {
+    padding-left: var(--padding-max);
+    padding-right: var(--padding-max);
+} */
+
+/* REDUCING PADDING ON MOBILE */
+/* @media screen and (max-width: 500px) {
+    .row {
+        padding-left: var(--padding-lg);
+        padding-right: var(--padding-lg);    }
+} */

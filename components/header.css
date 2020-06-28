@@ -1,23 +1,27 @@
 @import "theme.css";
 
+/* ------------------- */
+/* STRUCTURE OF NAVBAR */
+/* ------------------- */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--padding-xl);
-    /* border-bottom: var(--stroke-base) solid var(--lightgrey); */
-    font-size: var(--text-lg);
-    /* background-color: var(--theme); */
-    /* text-transform: uppercase; */
+
+    /* MAKE IT FIXED */
     position: fixed;
     top:0;
     left:0;
     right:0;
-}
 
-.nav:hover {
+    /* SPREAD AND V-CENTER */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-max);
+
+    /* PARENT TYPE STYLING */
+    text-transform: uppercase;
+    color: var(--black);
     background-color: var(--white);
-    transition-duration: 1s;
+
 }
 
 /* --------------------------- */
@@ -49,11 +53,17 @@
 }
 .nav-link > a:hover {
     text-decoration: none;
-    color: var(--black);
+    color: var(--theme);
 }
 .nav-link > a:active {
     text-decoration: none;
     color: var(--black);
+}
+
+.nav-left > .nav-branding {
+    font-size: var(--text-xl);
+    font-weight: var(--text-semi-bold);
+    text-transform: lowercase;
 }
 
 /* --------------- */
@@ -63,21 +73,39 @@
     display: flex;
 }
 .nav-link {
-    margin-left: var(--padding-base);
+    margin-left: var(--padding-lg);
+    font-weight: var(--text-med);
+    font-size: var(--text-sm);
+}
+
+.nav-menu {
+    text-transform: lowercase;
+    font-weight: var(--text-reg);
+    font-size: var(--text-base);
+}
+
+.nav-link:hover {
+    animation-name: navlink-bounce;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes navlink-bounce {
+    100% {transform: translateY(-2px);}
 }
 
 /* -------------- */
 /* RESPONSIVENESS */
 /* -------------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .nav > .nav-right > .nav-links {
         display: none;
     }
     .nav {
-        padding: var(--padding-base);
+        padding: var(--padding-lg);
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 501px) {
     .nav > .nav-right > .nav-menu {
         display: none;
     }

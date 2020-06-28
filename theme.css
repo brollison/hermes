@@ -6,25 +6,32 @@
     --desktop: 1200px;
 
     /* TEXT */
-    --text-welcome: 8rem;
+    --text-hero: 4.5rem;
+    --text-xl: 1.5rem;
     --text-lg: 1.25rem;
     --text-base: 1rem;
     --text-sm: 0.75rem;
+    --text-ultra-thin: 100;
+    --text-extra-thin: 200;
     --text-thin: 300;
     --text-reg: 400;
     --text-med: 500;
-    --text-bold: 600;
-    --text-heavy: 700;
+    --text-semi-bold: 600;
+    --text-bold: 700;
     --text-italic: italic;
 
     /* COLORS */
-    --black: #000000;
+    --black: #272727;
     --lightgrey: #f1f2f6;
     --white: #ffffff;
+    --red: #e15554;
+    --blue: #2429bd;
     --theme: #47FFAF;
     --transparent: transparent;
 
     /* PADDING/MARGIN */
+    --padding-max: 2rem;
+    --padding-xxl:1.75rem;
     --padding-xl: 1.5rem;
     --padding-lg: 1.25rem;
     --padding-base: 1rem;
@@ -42,7 +49,7 @@
     /* BORDERS */
     --stroke-thin: 0.5px;
     --stroke-base: 1px;
-    --stroke-med: 1.5px
+    --stroke-med: 1.5px;
     --stroke-thick: 2px;
 
 }
