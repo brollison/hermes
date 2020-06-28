@@ -1,109 +1,15 @@
-/* THEME */
-:root {
-    /* COLORS */
-    --background-base: #ffffff;
-    --text-base: #000000;
-    --button-primary-background: #32a852;
-    --button-primary-hover: #a83298;
-
-    /* PADDING/MARGIN/RADIUS */
-    --size-xl: 1.5rem;
-    --size-lg: 1.25rem;
-    --size-base: 1rem;
-    --size-sm: 0.75rem;
-    --size-xs: 0.5rem;
-    --size-none: 0rem;
-
-    /* LINE THICKNESS */
-    --line-thick: 2px;
-    --line-med: 1.5px;
-    --line-base: 1px;
-    --line-thin: 0.5px;
-}
+@import "theme.css";
+@import "components.css";
+@import url("https://use.typekit.net/xkq6fsr.css");
 
 /* MASTER STYLES */
+html {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 body {
     margin: var(--size-none);
-    /* font-family: "Balsamiq Sans", sans-serif; */
-}
-
-.btn-icon {
-    padding: var(--size-xs) var(--size-base) var(--size-xs) var(--size-base);
-    border: none;
-    background-color: var(--button-primary-background);
-    transition-duration: 0.5s;
-    border-radius: var(--size-xs);
-}
-
-/* NAVBAR STYLES*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--size-xl);
-    border-bottom: var(--line-base) solid gainsboro;
-    align-items: center;
-}
-
-.navbar > .navbar-left > div {
-    margin-right: var(--size-base);
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.navbar > .navbar-right > div {
-    margin-left: var(--size-base);
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.navbar-links {
-    display: flex;
-}
-
-.navbar-left > .navbar-links > .navbar-link > .navbar-link-text {
-    margin-left: var(--size-base);
-}
-
-.navbar-right > .navbar-links > .navbar-link > .navbar-link-icon {
-    height: 1.5rem;
-    margin-left: var(--size-xs);
-}
-
-.navbar-icon {
-    width: 1.25rem;
-}
-
-.navbar > .navbar-left > .navbar-links > .navbar-branding {
-    margin-right: var(--size-lg);
-}
-
-.navbar > .navbar-left > .navbar-links > .navbar-menu > .btn-icon {
-    background-color: transparent;
-    padding: var(--size-xs) var(--size-xs) var(--size-xs) var(--size-xs);
-    border-radius: 2rem;
-}
-
-.navbar > .navbar-left > .navbar-links > .navbar-menu > .btn-icon:hover {
-    background-color: var(--button-primary-hover);
-}
-
-@media screen and (max-width: 650px) {
-    .navbar > .navbar-left > .navbar-links > .navbar-branding {
-        display: none;
-    }
-    .navbar > .navbar-left > .navbar-links > .navbar-link {
-        display: none;
-    }
-    .navbar {
-        padding: var(--size-xs);
-    }
-}
-
-@media screen and (min-width: 651px) {
-    .navbar > .navbar-center > .navbar-branding {
-        display: none;
-    }
-    .navbar > .navbar-left > .navbar-links > .navbar-menu {
-        display: none;
-    }
+    font-family: "mr-eaves-modern", sans-serif;
+    font-size: var(--text-base);
 }

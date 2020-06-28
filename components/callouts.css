@@ -1,0 +1,86 @@
+@import "theme.css";
+
+.callouts {
+    display: grid;
+    gap: var(--padding-lg);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.callout {
+    background-color: var(--white);
+    border-radius: var(--rounded-extra);
+    border: var(--black) solid var(--stroke-base);
+    /* max-width: 250px; */
+    /* margin: var(--padding-xs); */
+}
+
+.callout-media > img {
+    display: block;
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: var(--rounded-extra) var(--rounded-extra) 0 0;
+}
+
+.callout-main {
+    padding: var(--padding-base);
+    font-size: var(--text-base);
+}
+
+/* ------------------------ */
+/* CALLOUT TITLE & SUBTITLE */
+/* ------------------------ */
+
+.callout-header {
+    margin-bottom: var(--padding-sm);
+}
+.callout-header > .title {
+    font-size: var(--text-lg);
+    font-weight: var(--text-bold);
+    text-decoration: none;
+}
+
+/* --------------------------- */
+/* REMOVE LINK STYLING ON TEXT */
+/* --------------------------- */
+
+.callout > a:link {
+    text-decoration: none;
+    color: var(--black);
+}
+.callout > a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
+.callout > a:hover {
+    text-decoration: none;
+    color: var(--black);
+}
+.callout > a:active {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* ------------------ */
+/* ON HOVER ANIMATION */
+/* ------------------ */
+
+@keyframes lift {
+    100% {transform: translateY(-5px)}
+}
+
+.callout:hover {
+    animation-name: lift;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 2px 4px 8px var(--lightgrey);
+}
+
+/* .callout:hover {
+    transform: translateY(-3px);
+    transition-duration: 0.5s;
+    box-shadow: 2px 4px 8px var(--lightgrey);
+} */
