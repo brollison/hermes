@@ -1,0 +1,18 @@
+@import "theme.css";
+
+.welcome {
+    height: 100vh;
+    background-color: var(--black);
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: var(--text-welcome);
+    font-weight: var(--text-heavy);
+    color: var(--white);
+    align-items: center;
+}
+
+.name > .name-nick {
+    color: var(--theme);
+}

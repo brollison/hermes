@@ -1,0 +1,84 @@
+@import "theme.css";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-xl);
+    /* border-bottom: var(--stroke-base) solid var(--lightgrey); */
+    font-size: var(--text-lg);
+    /* background-color: var(--theme); */
+    /* text-transform: uppercase; */
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.nav:hover {
+    background-color: var(--white);
+    transition-duration: 1s;
+}
+
+/* --------------------------- */
+/* REMOVE LINK STYLING ON TEXT */
+/* --------------------------- */
+.nav-branding > a:link {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-branding > a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-branding > a:hover {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-branding > a:active {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-link > a:link {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-link > a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-link > a:hover {
+    text-decoration: none;
+    color: var(--black);
+}
+.nav-link > a:active {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* --------------- */
+/* RIGHT LINK MENU */
+/* --------------- */
+.nav-right > .nav-links {
+    display: flex;
+}
+.nav-link {
+    margin-left: var(--padding-base);
+}
+
+/* -------------- */
+/* RESPONSIVENESS */
+/* -------------- */
+@media screen and (max-width: 600px) {
+    .nav > .nav-right > .nav-links {
+        display: none;
+    }
+    .nav {
+        padding: var(--padding-base);
+    }
+}
+@media screen and (min-width: 601px) {
+    .nav > .nav-right > .nav-menu {
+        display: none;
+    }
+}

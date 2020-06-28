@@ -1,0 +1,48 @@
+:root {
+
+    /* SCREEN SIZES */
+    --mobile: 600px;
+    --tablet: 900px;
+    --desktop: 1200px;
+
+    /* TEXT */
+    --text-welcome: 8rem;
+    --text-lg: 1.25rem;
+    --text-base: 1rem;
+    --text-sm: 0.75rem;
+    --text-thin: 300;
+    --text-reg: 400;
+    --text-med: 500;
+    --text-bold: 600;
+    --text-heavy: 700;
+    --text-italic: italic;
+
+    /* COLORS */
+    --black: #000000;
+    --lightgrey: #f1f2f6;
+    --white: #ffffff;
+    --theme: #47FFAF;
+    --transparent: transparent;
+
+    /* PADDING/MARGIN */
+    --padding-xl: 1.5rem;
+    --padding-lg: 1.25rem;
+    --padding-base: 1rem;
+    --padding-sm: 0.75rem;
+    --padding-xs: 0.5rem;
+    --padding-xxs: 0.25rem;
+    --padding-none: 0rem;
+
+    /* RADIUS */
+    --circle: 100rem;
+    --rounded: 0.25rem;
+    --rounded-extra: 0.5rem;
+    --square: 0rem;
+
+    /* BORDERS */
+    --stroke-thin: 0.5px;
+    --stroke-base: 1px;
+    --stroke-med: 1.5px
+    --stroke-thick: 2px;
+
+}
