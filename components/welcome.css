@@ -19,8 +19,10 @@
 
 .phone {
     /* BASIC STRUCTURE */
-    height: var(--iphonex-height);
-    width: var(--iphonex-width);
+    max-height: var(--iphonex-height);
+    max-width: var(--iphonex-width);
+    height: 100%;
+    width: 100%;
     border-radius: var(--iphonex-corner);
     background-color: var(--white);
 
@@ -75,6 +77,7 @@
 .greeting-wrapper {
     grid-area: 1 / 1; /* OVERLAP WITH SIBLING */
     display: grid; /* ALLOW CHILD POSITIONING */
+
 }
 
 /* GREETING ANIMATION */
@@ -82,28 +85,28 @@
     grid-area: 1 / 1; /* OVERLAP WITH SIBLING */
     text-align: center;
 
-    animation-name: breathe;
-    color: var(--transparent);
+    opacity: 0;
     font-size: var(--text-lg);
 }
 
 /* ANIMATION STYLING */
+.breathe {
+    animation-name: breathe;
+    animation-duration: 3s;
+}
 @keyframes breathe {
-    50% {color: var(--black);}
-    100% {color: var(--transparent);}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 /* GREETING MODIFIER SCHEDULING */
 .first {
-    animation-duration: 3s;
     animation-delay: 1s;
 }
 .second {
-    animation-duration: 3s;
     animation-delay: 4s;
 }
 .third {
-    animation-duration: 3s;
     animation-delay: 7s;
 }
 
@@ -245,11 +248,13 @@
 /* ANIMATION CLASS MODIFIER */
 .fadein {
     animation-name: fadein;
-    animation-delay: 10s;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
+.wave-two {
+    animation-delay: 10s;
+}
 
 
 /* ------------------ */
