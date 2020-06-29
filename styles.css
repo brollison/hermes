@@ -1,6 +1,6 @@
 @import "theme.css";
-@import "components.css";
 @import "components/header.css";
+@import "components/welcome.css";
 @import url("https://use.typekit.net/xkq6fsr.css");
 
 /* MASTER STYLES */
