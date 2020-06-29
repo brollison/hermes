@@ -19,9 +19,7 @@
 
     /* PARENT TYPE STYLING */
     text-transform: uppercase;
-    color: var(--black);
-    background-color: var(--white);
-
+    color: var(--white);
 }
 
 /* --------------------------- */
@@ -29,27 +27,27 @@
 /* --------------------------- */
 .nav-branding > a:link {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .nav-branding > a:visited {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .nav-branding > a:hover {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .nav-branding > a:active {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .nav-link > a:link {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .nav-link > a:visited {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .nav-link > a:hover {
     text-decoration: none;
@@ -57,7 +55,7 @@
 }
 .nav-link > a:active {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 
 .nav-left > .nav-branding {
@@ -78,12 +76,6 @@
     font-size: var(--text-sm);
 }
 
-.nav-menu {
-    text-transform: lowercase;
-    font-weight: var(--text-reg);
-    font-size: var(--text-base);
-}
-
 .nav-link:hover {
     animation-name: navlink-bounce;
     animation-duration: 0.5s;
@@ -98,11 +90,14 @@
 /* RESPONSIVENESS */
 /* -------------- */
 @media screen and (max-width: 500px) {
-    .nav > .nav-right > .nav-links {
+    /* .nav > .nav-right > .nav-links {
         display: none;
     }
     .nav {
         padding: var(--padding-lg);
+    } */
+    .nav {
+        display: none;
     }
 }
 @media screen and (min-width: 501px) {

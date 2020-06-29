@@ -1,9 +1,9 @@
 :root {
 
-    /* SCREEN SIZES */
-    --mobile: 600px;
-    --tablet: 900px;
-    --desktop: 1200px;
+    /* SIZES */
+    --iphonex-height:50.75rem;
+    --iphonex-width:23.44rem;
+    --thumbnail: 5rem;
 
     /* TEXT */
     --text-hero: 4.5rem;
@@ -18,12 +18,20 @@
     --text-med: 500;
     --text-semi-bold: 600;
     --text-bold: 700;
+    --text-black: 900;
     --text-italic: italic;
 
     /* COLORS */
     --black: #272727;
+    --gunmetal: #202c39;
+    --charcoal: #283845;
     --lightgrey: #f1f2f6;
+    --blue-grey: #93a3b1;
     --white: #ffffff;
+    --orange: #f29559;
+    --salmon:#ef8275;
+    --sage: #b8b08d;
+    --yellow: #f2d492;
     --red: #e15554;
     --blue: #2429bd;
     --theme: #47FFAF;
@@ -45,6 +53,7 @@
     --rounded: 0.25rem;
     --rounded-extra: 0.5rem;
     --square: 0rem;
+    --iphonex-corner: 2.75rem;
 
     /* BORDERS */
     --stroke-thin: 0.5px;
