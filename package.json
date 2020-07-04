@@ -1,0 +1,25 @@
+{
+  "name": "hermes",
+  "version": "1.0.0",
+  "description": "Personal playground of web applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brollison/hermes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brollison/hermes/issues"
+  },
+  "homepage": "https://github.com/brollison/hermes#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "components": "^0.1.0",
+    "postcss-modules": "^3.2.0"
+  }
+}
