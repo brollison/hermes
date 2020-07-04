@@ -1,3 +1,9 @@
+@import "theme.css";
+@import "components/header.css";
+@import "components/welcome.css";
+@import url("https://use.typekit.net/xkq6fsr.css");
+
+/* MASTER STYLES */
 :root {
 
     /* SIZES */
@@ -62,3 +68,30 @@
     --stroke-thick: 2px;
 
 }
+
+html {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    margin: var(--size-none);
+    font-family: "sofia-pro", sans-serif;
+    font-size: var(--text-base);
+}
+
+
+/* ----------------- */
+/* GLOBAL ROW STYLES */
+/* ----------------- */
+/* .row {
+    padding-left: var(--padding-max);
+    padding-right: var(--padding-max);
+} */
+
+/* REDUCING PADDING ON MOBILE */
+/* @media screen and (max-width: 500px) {
+    .row {
+        padding-left: var(--padding-lg);
+        padding-right: var(--padding-lg);    }
+} */
