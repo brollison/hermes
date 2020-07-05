@@ -88,8 +88,14 @@
 
 /* ANIMATION STYLING */
 .breathe {
-    animation-name: breathe;
-    animation-duration: 3s;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+}
+@-webkit-keyframes breathe {
+    50% {opacity: 1;}
+    100% {opacity: 0;}
 }
 @keyframes breathe {
     50% {opacity: 1;}
@@ -98,13 +104,16 @@
 
 /* GREETING MODIFIER SCHEDULING */
 .first {
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 .second {
-    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
 }
 .third {
-    animation-delay: 7s;
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
 }
 
 
@@ -238,19 +247,27 @@
 /* ----------------- */
 /* FADE-IN ANIMATION */
 /* ----------------- */
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 /* ANIMATION CLASS MODIFIER */
 .fadein {
-    animation-name: fadein;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: fadein;
+            animation-name: fadein;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .wave-two {
-    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
 }
 
 
@@ -258,8 +275,14 @@
 /* SLIDE-IN ANIMATION */
 /* ------------------ */
 .slide-from-right {
-    animation: slide-from-right 0.25s forwards;
-    animation-delay: 10s;
+    -webkit-animation: slide-from-right 0.25s forwards;
+            animation: slide-from-right 0.25s forwards;
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+@-webkit-keyframes slide-from-right {
+    100% {right: var(--padding-lg);}
 }
 
 @keyframes slide-from-right {
@@ -267,8 +290,14 @@
 }
 
 .slide-from-left {
-    animation: slide-from-left 0.25s forwards;
-    animation-delay: 10s;
+    -webkit-animation: slide-from-left 0.25s forwards;
+            animation: slide-from-left 0.25s forwards;
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+@-webkit-keyframes slide-from-left {
+    100% {left: var(--padding-lg);}
 }
 
 @keyframes slide-from-left {
