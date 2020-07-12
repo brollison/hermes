@@ -1,0 +1,72 @@
+/* --------------------------- */
+/* REMOVE LINK STYLING ON TEXT */
+/* --------------------------- */
+a.card:link {
+    text-decoration: none;
+    color: inherit;
+}
+a.card:hover {
+    text-decoration: none;
+    color: inherit;
+}
+a.card:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a.card:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* --------------------- */
+/* STRUCTURE OF HEADLINE */
+/* --------------------- */
+.headline {
+    padding: var(--padding-xxl);
+    border-radius: var(--rounded);
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    max-width: 38rem;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+}
+
+.headline > img {
+    height: 4.5rem;
+    margin-right: var(--padding-lg);
+}
+
+.headline-body > .title {
+    font-size: var(--text-lg);
+    font-weight: var(--text-bold);
+    text-transform: capitalize;
+}
+
+.headline-body > .text {
+    line-height: 1.25rem;
+}
+
+.headline:hover {
+    animation-name: card-hover;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes card-hover {
+    100% {transform: translateY(-0.25rem);}
+}
+
+/* -------------- */
+/* RESPONSIVENESS */
+/* -------------- */
+@media screen and (max-width: 650px) {
+    .thumbnail {
+        display: none;
+    }
+    .headline-body > .title {
+        font-size: var(--text-base);
+    }
+}
