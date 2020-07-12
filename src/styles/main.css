@@ -1,30 +1,36 @@
 @import "./header.css";
-@import "./welcome.css";
+@import "./headline.css";
 @import url("https://use.typekit.net/xkq6fsr.css");
 
 /* MASTER STYLES */
 :root {
 
     /* SIZES */
-    --iphonex-height:50.75rem;
-    --iphonex-width:23.44rem;
-    --thumbnail: 5rem;
+
 
     /* TEXT */
-    --text-hero: 4.5rem;
+    --text-hero: 2.25rem;
     --text-xl: 1.5rem;
     --text-lg: 1.25rem;
     --text-base: 1rem;
     --text-sm: 0.75rem;
-    --text-ultra-thin: 100;
-    --text-extra-thin: 200;
-    --text-thin: 300;
+
+    --font-header: "span", serif;
+    --font-body: "quasimoda", sans-serif;
+
+    /* WEIGHTS */
+    --header-thin: 200;
+    --header-light: 300;
+    --header-reg: 400;
+    --header-semibold: 600;
+    --header-bold: 700;
+    --text-light: 300;
     --text-reg: 400;
     --text-med: 500;
-    --text-semi-bold: 600;
+    --text-semibold: 600;
     --text-bold: 700;
+    --text-xbold: 800;
     --text-black: 900;
-    --text-italic: italic;
 
     /* COLORS */
     --black: #272727;
@@ -32,6 +38,7 @@
     --charcoal: #283845;
     --lightgrey: #f1f2f6;
     --blue-grey: #93a3b1;
+    --ivory: #fafafa;
     --white: #ffffff;
     --orange: #f29559;
     --salmon:#ef8275;
@@ -43,7 +50,7 @@
     --transparent: transparent;
 
     /* PADDING/MARGIN */
-    --padding-max: 2rem;
+    --padding-max: 2.5rem;
     --padding-xxl:1.75rem;
     --padding-xl: 1.5rem;
     --padding-lg: 1.25rem;
@@ -58,7 +65,6 @@
     --rounded: 0.25rem;
     --rounded-extra: 0.5rem;
     --square: 0rem;
-    --iphonex-corner: 2.75rem;
 
     /* BORDERS */
     --stroke-thin: 0.5px;
@@ -71,10 +77,22 @@
 html {
     font-family: sans-serif;
     font-style: normal;
-    font-weight: 400;
 }
 body {
     margin: var(--size-none);
-    font-family: "sofia-pro", sans-serif;
+    font-family: "quasimoda", sans-serif;
     font-size: var(--text-base);
+    font-weight: var(--text-reg);
+    background-color: var(--ivory);
+    color: var(--charcoal);
+}
+
+.row {
+    padding: var(--padding-max);
+}
+
+@media screen and (max-width: 650px) {
+    .row {
+        padding: var(--padding-xxl) var(--padding-lg);
+    }
 }
