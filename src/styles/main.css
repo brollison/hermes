@@ -42,10 +42,7 @@
     --white: #ffffff;
     --orange: #f29559;
     --salmon:#ef8275;
-    --sage: #b8b08d;
-    --yellow: #f2d492;
     --red: #e15554;
-    --blue: #2429bd;
     --theme: #47FFAF;
     --transparent: transparent;
 
@@ -80,7 +77,7 @@ html {
 }
 body {
     margin: var(--size-none);
-    font-family: "quasimoda", sans-serif;
+    font-family: var(--font-body);
     font-size: var(--text-base);
     font-weight: var(--text-reg);
     background-color: var(--ivory);
