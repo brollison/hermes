@@ -23,9 +23,13 @@ a.card:active {
 /* --------------------- */
 /* STRUCTURE OF HEADLINE */
 /* --------------------- */
+.card {
+    display: flex;
+    justify-content: center;
+}
 .headline {
     padding: var(--padding-xxl);
-    border-radius: var(--rounded);
+    border-radius: var(--rounded-extra);
     background-color: var(--white);
     display: flex;
     align-items: center;
@@ -59,12 +63,40 @@ a.card:active {
     100% {transform: translateY(-0.25rem);}
 }
 
+
+
+/* ------------------------- */
+/* STRUCTURE OF SOCIAL LINKS */
+/* ------------------------- */
+.social-links {
+    margin-top: var(--padding-xl);
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    fill: var(--charcoal);
+}
+
+.social-link:hover {
+    fill: var(--red);
+}
+
+.middle {
+    margin: 0 var(--padding-lg) 0 var(--padding-lg);
+}
+
+
+
 /* -------------- */
 /* RESPONSIVENESS */
 /* -------------- */
 @media screen and (max-width: 650px) {
     .thumbnail {
         display: none;
+    }
+    .headline {
+        padding: var(--padding-base) var(--padding-xl);
     }
     .headline-body > .title {
         font-size: var(--text-base);
